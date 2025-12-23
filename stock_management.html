@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Management - BloodConnect</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="back-link">&larr; Home</a>
+        <h1>Hospital Stock Management</h1>
+    </header>
+
+    <main>
+        <form id="stockUpdateForm">
+            <h3>Hospital Details</h3>
+            <label for="hospitalName">Hospital Name:</label>
+            <input type="text" id="hospitalName" value="City General Hospital" required>
+
+            <label for="hospitalLocation">Location (e.g., City, Area):</label>
+            <input type="text" id="hospitalLocation" value="Main Street Area" required>
+            
+            <h3>Current Blood Stock (Units)</h3>
+            <div class="stock-grid">
+                <label for="stockA_pos">A+:</label>
+                <input type="number" id="stockA_pos" value="5" min="0" required>
+                <label for="stockO_neg">O-:</label>
+                <input type="number" id="stockO_neg" value="2" min="0" required>
+                <label for="stockB_pos">B+:</label>
+                <input type="number" id="stockB_pos" value="8" min="0" required>
+                <label for="stockAB_pos">AB+:</label>
+                <input type="number" id="stockAB_pos" value="12" min="0" required>
+                </div>
+
+            <button type="submit" class="cta-button primary">Update Stock Data</button>
+        </form>
+        
+        <p id="updateMessage" class="success-message"></p>
+        <p class="note">**Note:** This data is simulated and does not persist across sessions.</p>
+    </main>
+
+    <script src="stock_script.js"></script>
+</body>
+</html>
