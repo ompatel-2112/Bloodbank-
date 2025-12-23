@@ -1,0 +1,201 @@
+/* General Reset and Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header and Footer */
+header {
+    background-color: #e74c3c; /* Blood Red */
+    color: white;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+/* Main Content and Forms */
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+form {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Call to Action Buttons */
+.cta-button {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.primary {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.primary:hover {
+    background-color: #c0392b;
+}
+
+.secondary {
+    background-color: #3498db;
+    color: white;
+}
+
+.secondary:hover {
+    background-color: #2980b9;
+}
+
+/* Home Page Specific Styles */
+.home-main {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.action-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.action-card h2 {
+    color: #e74c3c;
+    margin-bottom: 0.5rem;
+}
+
+.info-section {
+    padding: 1rem;
+    border-top: 2px solid #ddd;
+    text-align: center;
+}
+
+/* Results and List Styles */
+.results-container {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+#hospitalList {
+    list-style: none;
+    padding: 0;
+}
+
+#hospitalList li {
+    padding: 1rem 0;
+    border-bottom: 1px dashed #eee;
+}
+
+#hospitalList li:last-child {
+    border-bottom: none;
+}
+
+.hospital-name {
+    font-weight: bold;
+    color: #2c3e50;
+    font-size: 1.1rem;
+}
+
+.hospital-contact {
+    color: #27ae60;
+    font-style: italic;
+}
+
+.back-link {
+    float: left;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* Stock Grid for Management Page */
+.stock-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+
+.stock-grid input {
+    margin-bottom: 0; /* Override the form's input margin */
+}
+
+.success-message {
+    color: #27ae60;
+    font-weight: bold;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.note {
+    font-size: 0.8rem;
+    color: #7f8c8d;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    border-top: 1px solid #ddd;
+    color: #7f8c8d;
+    font-size: 0.9rem;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 600px) {
+    .stock-grid {
+        grid-template-columns: 1fr;
+    }
+}
